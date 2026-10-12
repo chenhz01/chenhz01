@@ -26,6 +26,15 @@
 > **恐惧失控是猜测；没有审计轨迹是事实。**
 > 我不卖安全感。我造的是让自进化 AI「**可证明没跑偏**」的机械门禁——证据不可篡改，标准公开可采用。
 
+## 🧰 Toolbox — 55 purpose-built AI-engineering tools
+
+[![Toolbox](https://img.shields.io/badge/toolbox-55_tools-7C3AED?style=flat-square)](https://github.com/chenhz01/zhengming-toolbox)
+[![Score-first](https://img.shields.io/badge/design-reverse_score--first-F0C674?style=flat-square)](https://github.com/chenhz01/zhengming-toolbox#methodology-reverse-score-first-design)
+[![Zero dependency](https://img.shields.io/badge/deps-stdlib_only-success?style=flat-square)](https://github.com/chenhz01/zhengming-toolbox)
+
+A toolbox of 55 purpose-built tools across neglected AI-engineering niches — prompt-engineering harnesses, agent governance, code-quality gates, security specs. Every tool: pure stdlib, CLI-first, 40+ self-test cases, CI-verified. Entry point: **[zhengming-toolbox](https://github.com/chenhz01/zhengming-toolbox)**.
+
+
 ## 📏 我正在推动的行业质量标准（公开 · 可采用）
 
 别的个人主页列项目，这里列**标准**。以下门禁全部开源、零依赖、可直接接入你的 Agent 工程：
