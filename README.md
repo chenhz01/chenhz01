@@ -81,9 +81,7 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
   3. **定制**——SKILL.md→Codex 转换与 L3 配方层深度交付
 - **怎么找**：邮件 [shanlun2029@outlook.com](mailto:shanlun2029@outlook.com)，或直接在对应仓库开 Issue（`adoption` / `collab`）
 
-## 🎵 另一面：音乐人
 
-用 AI 写歌、推歌、做封面——人定方向与品味，AI 放大执行。**AI 是我的创作伙伴，不是替代者。**
 
 ---
 
