@@ -1,4 +1,4 @@
-<!-- chenhz01/chenhz01 · Profile README v2.0 · 2026-09-28 重写版 -->
+<!-- chenhz01/chenhz01 · Profile README v2.1 · 2026-10-15 增量版（v2.0 09-28 骨架保留 + 上游信任锚/行为层基准/中国区线注入） -->
 <!-- 对标：awesome-github-profile-readme 行业公式（typing-SVG + shields + stats 三件套） -->
 
 <div align="center">
@@ -70,15 +70,28 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 
 [ai-native-process-engine](https://github.com/chenhz01/ai-native-process-engine)（AI 原生流程引擎 · 七层架构 + L0-L3 自治分级）· [fork-to-mainrepo-playbook](https://github.com/chenhz01/fork-to-mainrepo-playbook)（衍生项目独立化方案）· [trending-scout](https://github.com/chenhz01/trending-scout)（Trending 对抗性审核）· [PartnerGene](https://github.com/chenhz01/PartnerGene)（基因中心型 AI 商务建联）
 
+## 🧪 行为层 conformance — 已被上游验证的轨迹
+
+[**agent-memory-benchmark**](https://github.com/chenhz01/agent-memory-benchmark)：行为层记忆质量基准——11 条机械可断言条款、零依赖 L1–L5 conformance checker、NMR 遗忘质量排行榜、AMTF 可移植 schema。
+
+**一个 90 秒的发现**：对 mem0（v2.2.1）用 `deepseek-chat`（temperature=0）做行为探针——先说最爱 GPT-4o，再说已换成 DeepSeek-V3。记忆层正确存了带时间戳的更新，但查询"我最爱什么 LLM"返回**自相矛盾的两条**：被取代的旧记忆从未死去。该 FAIL 在 temperature=0 下确定性复现 N=2，证据逐字节一致。→ [完整报告 · 复现脚本 · 原始输出](https://gist.github.com/chenhz01/66c2474660298489a32716459a0b867f)
+
+**上游信任锚**（每条可点击验证）：
+
+- ✅ **[TeleAI-UAGI/Awesome-Agent-Memory #124](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/pull/124)** — 维护者亲手合入 main，**co-author 署名**（[502656a](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/commit/502656a)）
+- 🔍 **[IAAR-Shanghai/Awesome-AI-Memory #177](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pull/177)** — 受邀贡献，review 中
+- 📌 实证回信：[mem0ai/mem0 #7283](https://github.com/mem0ai/mem0/issues/7283)（write-gate）· [langchain-ai/langgraph #9006](https://github.com/langchain-ai/langgraph/issues/9006) · MangoDisk #66（file:line 双版本根因）
+
 ---
 
 ## 🤝 正在寻找的合作
 
 - **谁**：做 agent 平台 / skill 生态 / AI 治理的团队与独立开发者
-- **三种合作形态**：
+- **四种合作形态**：
   1. **集成**——审计引擎接入你的平台（EEL / adversarial-research-audit）
   2. **诊断**——skill 库健康体检 + 修复路线（skill-audit-kit）
   3. **定制**——SKILL.md→Codex 转换与 L3 配方层深度交付
+  4. **中国区落地**——你在广州的 on-the-ground partner：本地开发者社区、中文模型栈 conformance 跑批（DeepSeek / Qwen / GLM / Kimi）、中国市场准入的步步落地——步子随你的节奏，今天无需任何承诺
 - **怎么找**：邮件 [shanlun2029@outlook.com](mailto:shanlun2029@outlook.com)，或直接在对应仓库开 Issue（`adoption` / `collab`）
 
 
@@ -101,7 +114,10 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 
 - I build mechanical gates that let self-evolving AI **prove** it didn't drift — G1–G6 evolution guardrails, adversarial research audits, boot-time memory integrity checks.
 - I turn agent skill collections into production pipelines: health checks, contract rules, SKILL.md→Codex converters. All zero-dependency, all open source.
+- **Behavior-layer conformance for agent memory** ([agent-memory-benchmark](https://github.com/chenhz01/agent-memory-benchmark)): 11 machine-assertable clauses, deterministic probes, raw outputs published. Sample finding: mem0 v2.2.1 keeps self-contradictory superseded facts alive at temperature 0 (deterministic, N=2) — [full report & repro](https://gist.github.com/chenhz01/66c2474660298489a32716459a0b867f).
+- **Merged upstream:** my PR to [TeleAI-UAGI/Awesome-Agent-Memory](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/pull/124) was merged to main by the maintainer with co-author credit.
 - **Adopt any gate in your project** — open an Issue tagged `adoption` and become part of the standard.
+- **Eyeing the China market?** I'm your on-the-ground partner in Guangzhou: local developer community, Chinese model-stack conformance (DeepSeek / Qwen / GLM / Kimi), and a China presence built step by step, at your pace.
 
 Looking for: agent platform / skill ecosystem / AI governance teams. → shanlun2029@outlook.com
 
