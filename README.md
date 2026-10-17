@@ -70,6 +70,28 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 
 [ai-native-process-engine](https://github.com/chenhz01/ai-native-process-engine)（AI 原生流程引擎 · 七层架构 + L0-L3 自治分级）· [fork-to-mainrepo-playbook](https://github.com/chenhz01/fork-to-mainrepo-playbook)（衍生项目独立化方案）· [trending-scout](https://github.com/chenhz01/trending-scout)（Trending 对抗性审核）· [PartnerGene](https://github.com/chenhz01/PartnerGene)（基因中心型 AI 商务建联）
 
+## 📚 同一套纪律，用在五个领域（研究笔记）
+
+上面讲的是「怎么证明 AI 没跑偏」。这套纪律我也用在自己的技术判断上：**每条判断必须带边界数、来源等级、以及「什么证据能推翻它」**。五套写下来发现，判断方法其实是同一套，只是换了领域。
+
+| 领域 | 十讲覆盖 | 入口 |
+|---|---|---|
+| 神经形态计算与事件驱动传感 | SNN 脉冲编码、事件相机 DVS、Loihi/Akida/SpiNNaker2 版图、能效优势的成立条件 | [notes](https://github.com/chenhz01/neuromorphic-event-sensing) |
+| AI 老药新用与计算重定位 | 证据链四层、转录组指纹、扩散模型 DTI、1150 万人 EHR、10-30% 证伪边界 | [notes](https://github.com/chenhz01/ai-drug-repurposing) |
+| 本地优先软件与 CRDT 同步 | 收敛数学、同步架构三型、TLA+ 验证、经济学反方视角、95% 定律 | [notes](https://github.com/chenhz01/local-first-crdt) |
+| 后量子密码迁移 | HNDL 威胁模型、FIPS 203/204/205、混合密钥交换、CBOM 盘点、密码敏捷性 | [notes](https://github.com/chenhz01/post-quantum-migration) |
+| 软体与折纸机器人 | 柔顺性第一性原理、折纸拓扑、气动驱动、控制难题、市场版图 | [notes](https://github.com/chenhz01/soft-origami-robotics) |
+
+三条代表性判断，每句都能点进去验证：
+
+> 「省 100 倍」不是芯片属性——三个条件各打九折还剩约七成，缺任何一条就塌回接近 1。（[能效真相](https://github.com/chenhz01/neuromorphic-event-sensing/blob/main/notes/06-efficiency-truth.md)）
+
+> 95.3% 是回顾恢复率，10-30% 才是前瞻重复率，两者之间隔着一整个行业。（[证伪边界](https://github.com/chenhz01/ai-drug-repurposing/blob/main/notes/09-falsification-10-30-percent.md)）
+
+> 95% 的冲突不需要 CRDT，谁最后改的听谁的，再加一本不可变流水账就够了。（[95% 定律](https://github.com/chenhz01/local-first-crdt/blob/main/notes/08-95-percent-law-lww.md)）
+
+每篇过两道费曼关：**大众层**（12 岁能懂，回答「与我何干」，只能填 省钱/赚钱/避险/暂无）+ **专业层**（机制 / 边界数 / 反例 / 怎么复现，数字裸标 [一手] [二手] [推算]）。缺大众层是自嗨，缺专业层是空话。协议见 [FEYNMAN.md](https://github.com/chenhz01/local-first-crdt/blob/main/FEYNMAN.md)。
+
 ## 🧪 行为层 conformance — 已被上游验证的轨迹
 
 [**agent-memory-benchmark**](https://github.com/chenhz01/agent-memory-benchmark)：行为层记忆质量基准——11 条机械可断言条款、零依赖 L1–L5 conformance checker、NMR 遗忘质量排行榜、AMTF 可移植 schema。
@@ -117,6 +139,7 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 - **Behavior-layer conformance for agent memory** ([agent-memory-benchmark](https://github.com/chenhz01/agent-memory-benchmark)): 11 machine-assertable clauses, deterministic probes, raw outputs published. Sample finding: mem0 v2.2.1 keeps self-contradictory superseded facts alive at temperature 0 (deterministic, N=2) — [full report & repro](https://gist.github.com/chenhz01/66c2474660298489a32716459a0b867f).
 - **Merged upstream:** my PR to [TeleAI-UAGI/Awesome-Agent-Memory](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/pull/124) was merged to main by the maintainer with co-author credit.
 - **Adopt any gate in your project** — open an Issue tagged `adoption` and become part of the standard.
+- **The same discipline, applied to my own technical judgments** — five sets of ten research notes (neuromorphic computing, AI drug repurposing, local-first CRDT, post-quantum migration, soft robotics). Every claim carries a boundary number, a source grade, and an explicit condition under which it is false: [notes index](https://github.com/chenhz01/neuromorphic-event-sensing).
 - **Eyeing the China market?** I'm your on-the-ground partner in Guangzhou: local developer community, Chinese model-stack conformance (DeepSeek / Qwen / GLM / Kimi), and a China presence built step by step, at your pace.
 
 Looking for: agent platform / skill ecosystem / AI governance teams. → shanlun2029@outlook.com
