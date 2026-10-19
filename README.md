@@ -26,9 +26,9 @@
 > **恐惧失控是猜测；没有审计轨迹是事实。**
 > 我不卖安全感。我造的是让自进化 AI「**可证明没跑偏**」的机械门禁——证据不可篡改，标准公开可采用。
 
-## 📌 先从这六个入口开始
+## 📌 先从这七个入口开始
 
-*Six entry points — start anywhere, each one runs offline.*
+*Seven entry points — start anywhere, each one runs offline.*
 
 | # | 角色 | 仓库 | 一句话 |
 |---|---|---|---|
@@ -38,6 +38,31 @@
 | 4 | 进化账本 | **[EEL](https://github.com/chenhz01/EEL)** | 为自进化 AI 造不可篡改的进化账本（求合作脱敏版） |
 | 5 | 可重跑判决 | **[memory-gate-suite](https://github.com/chenhz01/memory-gate-suite)** | MGP-1.0 六道记忆质量门禁，第三方可复跑同一判决 |
 | 6 | 领域研究 | **[neuromorphic-event-sensing](https://github.com/chenhz01/neuromorphic-event-sensing)** | 五套技术领域十讲：神经形态 / 老药新用 / 本地优先 / 后量子 / 软体机器人 |
+| 7 | Agent 门禁 | **[agent-gates](https://github.com/chenhz01/agent-gates)** | 14 道门：把 Agent 的失败挡在合并之前（零依赖单文件，14 仓索引） |
+
+## 🚦 agent-gates — 14 道门，把 Agent 的失败挡在合并之前
+
+*14 gates · one `gate.py` each · stdlib only · exit `0`/`1` · every example fails on purpose*
+
+Agent 上线之后的问题不是「能不能跑」，是「怎么知道它还在正轨上」。这一组每个仓都是一份零依赖单文件，对着你已有的文件或目录跑一次，给出一个能进 CI 的结论。总入口：**[agent-gates](https://github.com/chenhz01/agent-gates)**（决策树：「你卡在哪 → 装哪道门」+ `fetch.py` 一键取件）。
+
+| 层 | 门 | 它给你的那个数 |
+|---|---|---|
+| 运行时 | [loop-gate](https://github.com/chenhz01/loop-gate) | 重复次数 + 停滞区间 |
+| 运行时 | [permission-gate](https://github.com/chenhz01/permission-gate) | 过度授权分（0-100） |
+| 运行时 | [price-gate](https://github.com/chenhz01/price-gate) | 价格表错行 |
+| 输入 | [context-gate](https://github.com/chenhz01/context-gate) | 关键单元存活率 |
+| 输入 | [instruction-gate](https://github.com/chenhz01/instruction-gate) | 冲突条款对 |
+| 产出 | [output-gate](https://github.com/chenhz01/output-gate) | BLOCK / WARN 计数 |
+| 产出 | [leak-gate](https://github.com/chenhz01/leak-gate) | 泄露命中 |
+| 记忆 | [memory-expiry-gate](https://github.com/chenhz01/memory-expiry-gate) | 每条记忆的去向 |
+| 检索 | [drift-gate](https://github.com/chenhz01/drift-gate) | 漂移分 + 最差维度 |
+| 运维 | [backup-gate](https://github.com/chenhz01/backup-gate) | 不一致文件数 |
+| 运维 | [trail-gate](https://github.com/chenhz01/trail-gate) | 链完整性 |
+| 代码 | [complexity-ceiling](https://github.com/chenhz01/complexity-ceiling) | 超预算文件 |
+| 代码 | [deadcode-gate](https://github.com/chenhz01/deadcode-gate) | 死代码占比 |
+| 文档 | [docrot-gate](https://github.com/chenhz01/docrot-gate) | 失效引用数 |
+
 
 ## 🧰 Toolbox — 55 purpose-built AI-engineering tools
 
