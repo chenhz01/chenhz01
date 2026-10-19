@@ -26,6 +26,19 @@
 > **恐惧失控是猜测；没有审计轨迹是事实。**
 > 我不卖安全感。我造的是让自进化 AI「**可证明没跑偏**」的机械门禁——证据不可篡改，标准公开可采用。
 
+## 📌 先从这六个入口开始
+
+*Six entry points — start anywhere, each one runs offline.*
+
+| # | 角色 | 仓库 | 一句话 |
+|---|---|---|---|
+| 1 | 总入口 | **[zhengming-toolbox](https://github.com/chenhz01/zhengming-toolbox)** | 55 个零依赖工具的总索引，从任一垂类进入 |
+| 2 | 对抗审计 | **[adversarial-research-audit](https://github.com/chenhz01/adversarial-research-audit)** | 抓「不撒谎但会骗人」的研究报告：覆盖算术、簇求和、引用完整性 |
+| 3 | 记忆完整性 | **[agent-memory-doctor](https://github.com/chenhz01/agent-memory-doctor)** | 启动自检：约定静默丢失、注入稀释、回滚锚断裂 |
+| 4 | 进化账本 | **[EEL](https://github.com/chenhz01/EEL)** | 为自进化 AI 造不可篡改的进化账本（求合作脱敏版） |
+| 5 | 可重跑判决 | **[memory-gate-suite](https://github.com/chenhz01/memory-gate-suite)** | MGP-1.0 六道记忆质量门禁，第三方可复跑同一判决 |
+| 6 | 领域研究 | **[neuromorphic-event-sensing](https://github.com/chenhz01/neuromorphic-event-sensing)** | 五套技术领域十讲：神经形态 / 老药新用 / 本地优先 / 后量子 / 软体机器人 |
+
 ## 🧰 Toolbox — 55 purpose-built AI-engineering tools
 
 [![Toolbox](https://img.shields.io/badge/toolbox-55_tools-7C3AED?style=flat-square)](https://github.com/chenhz01/zhengming-toolbox)
