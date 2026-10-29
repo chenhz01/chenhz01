@@ -1,4 +1,5 @@
-<!-- chenhz01/chenhz01 · Profile README v2.1 · 2026-10-15 增量版（v2.0 09-28 骨架保留 + 上游信任锚/行为层基准/中国区线注入） -->
+<!-- chenhz01/chenhz01 · Profile README v2.2 · 2026-10-29 增量（S1–S4 规格承诺兑现审计门禁 + spec-drift 入口 + 第 5 种合作形态） -->
+<!-- v2.1 · 2026-10-15 增量版（v2.0 09-28 骨架保留 + 上游信任锚/行为层基准/中国区线注入） -->
 <!-- 对标：awesome-github-profile-readme 行业公式（typing-SVG + shields + stats 三件套） -->
 
 <div align="center">
@@ -83,6 +84,7 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 | P1–P5 | **发布突破五流程** | 从设计到真实验证 100% 覆盖的发表纪律 | [ai-agent-skill-breakthrough](https://github.com/chenhz01/ai-agent-skill-breakthrough) |
 | D1–D5 | **研究对抗审计** | 覆盖率算术、分簇加总、引用完整性——抓"没在撒谎却在撒谎" | [adversarial-research-audit](https://github.com/chenhz01/adversarial-research-audit) |
 | M-Boot | **记忆开机体检** | 抓约定静默丢失与注入稀释 | [agent-memory-doctor](https://github.com/chenhz01/agent-memory-doctor) |
+| S1–S4 | **规格承诺兑现审计** | 你写下的每条需求，代码里真兑现了吗——查未决澄清、状态虚报、需求失锚、跨 spec 静默取代 | [spec-drift](https://github.com/chenhz01/spec-drift) |
 
 🎯 **把你的 Agent 项目接入以上任一门禁，开 Issue 标注 `adoption`**——你就是我推动行业质量的一部分。
 
@@ -147,11 +149,12 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 ## 🤝 正在寻找的合作
 
 - **谁**：做 agent 平台 / skill 生态 / AI 治理的团队与独立开发者
-- **四种合作形态**：
+- **五种合作形态**：
   1. **集成**——审计引擎接入你的平台（EEL / adversarial-research-audit）
   2. **诊断**——skill 库健康体检 + 修复路线（skill-audit-kit）
   3. **定制**——SKILL.md→Codex 转换与 L3 配方层深度交付
   4. **中国区落地**——你在广州的 on-the-ground partner：本地开发者社区、中文模型栈 conformance 跑批（DeepSeek / Qwen / GLM / Kimi）、中国市场准入的步步落地——步子随你的节奏，今天无需任何承诺
+  5. **规格承诺兑现审计**——你的 `specs/` 里那些写着却没人做的需求：我用 [spec-drift](https://github.com/chenhz01/spec-drift) 免费跑一遍（未决澄清 / 状态虚报 / 需求失锚 / 跨 spec 静默取代），**换一个可公开的案例**；不方便公开就匿名，你说了算。顺带说一句我在 57 个用 spec-kit 的公开项目上扫到的事实：**44% 的 spec 永远停在 Draft**，所以「这份 spec 还准不准」根本无从判断——因为它从来没被标成准过
 - **怎么找**：邮件 [shanlun2029@outlook.com](mailto:shanlun2029@outlook.com)，或直接在对应仓库开 Issue（`adoption` / `collab`）
 
 
@@ -176,6 +179,7 @@ A toolbox of 55 purpose-built tools across neglected AI-engineering niches — p
 - I turn agent skill collections into production pipelines: health checks, contract rules, SKILL.md→Codex converters. All zero-dependency, all open source.
 - **Behavior-layer conformance for agent memory** ([agent-memory-benchmark](https://github.com/chenhz01/agent-memory-benchmark)): 11 machine-assertable clauses, deterministic probes, raw outputs published. Sample finding: mem0 v2.2.1 keeps self-contradictory superseded facts alive at temperature 0 (deterministic, N=2) — [full report & repro](https://gist.github.com/chenhz01/66c2474660298489a32716459a0b867f).
 - **Merged upstream:** my PR to [TeleAI-UAGI/Awesome-Agent-Memory](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/pull/124) was merged to main by the maintainer with co-author credit.
+- **Does your spec still describe your code?** [spec-drift](https://github.com/chenhz01/spec-drift) checks the four ways a spec-kit spec silently goes stale (unresolved clarifications, status that lies, requirements that lost their test anchor, cross-spec supersession). Zero deps, no LLM, CI-able. Building it, every naive version was wrong — the three filters that fixed it are in the README. I scanned 57 public spec-kit projects: **44% of specs never leave `Draft`**, which is why "is this spec still accurate?" is unanswerable — no spec was ever marked accurate. → **I'll run the audit on your `specs/` for free in exchange for a citable case** (anonymised if you prefer).
 - **Adopt any gate in your project** — open an Issue tagged `adoption` and become part of the standard.
 - **The same discipline, applied to my own technical judgments** — five sets of ten research notes (neuromorphic computing, AI drug repurposing, local-first CRDT, post-quantum migration, soft robotics). Every claim carries a boundary number, a source grade, and an explicit condition under which it is false: [notes index](https://github.com/chenhz01/neuromorphic-event-sensing).
 - **Eyeing the China market?** I'm your on-the-ground partner in Guangzhou: local developer community, Chinese model-stack conformance (DeepSeek / Qwen / GLM / Kimi), and a China presence built step by step, at your pace.
